@@ -66,8 +66,7 @@ app.get('/', (req, res) => {
 });
 
 
-// ✅ Start server
-const PORT = 5000;
-app.listen(PORT, () => {
-    console.log(`🚀 API server running at http://localhost:${PORT}`);
+// ✅ Start the server (this is what you're asking about)
+app.listen(process.env.PORT || 5000, () => {
+    console.log(`🚀 API server running on port ${process.env.PORT || 5000}`);
 });
