@@ -55,4 +55,4 @@ jobs:
           app-name: 'EMPIC-ESERVICE-API'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_92648EA0C8EC40998EA33042DDEC5980 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FE49EB83B8594ED39C4ED77F53522363 }}
