@@ -9,10 +9,10 @@ app.use(express.json());
 
 // ✅ SQL Server connection settings
 const dbConfig = {
-    user: 'sa',
-    password: 'P@ssw0rd',
-    server: '10.1.0.77',
-    database: 'devsacaa',
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    server: process.env.DB_SERVER,
+    database: process.env.DB_DATABASE,
     options: {
         encrypt: true,
         trustServerCertificate: true,
